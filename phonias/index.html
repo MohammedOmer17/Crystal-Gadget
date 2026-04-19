@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phonias — Simply Accessories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">Crystal Gadgets</div>
+    <ul class="nav-links">
+      <li><a href="#">Cases</a></li>
+      <li><a href="#">Audio</a></li>
+      <li><a href="#">Charging</a></li>
+      <li><a href="#">Collections</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-search" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+      <button class="nav-cart" aria-label="Cart">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      </button>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-image"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <!-- LEFT -->
+      <div class="hero-left">
+        <div class="hero-title-wrap">
+          <h1 class="hero-title">simply</h1>
+          <span class="hero-subtitle">accessories</span>
+        </div>
+        <p class="hero-tagline">Simple accessories<br>for everyday life</p>
+        <a href="#categories" class="hero-cta">Explore collection</a>
+      </div>
+
+      <!-- CENTER: product visual rendered via CSS/SVG -->
+      <div class="hero-center">
+        <div class="hero-platform">
+          <div class="hero-platform-disc"></div>
+          <div class="product-phone-case">
+            <div class="phone-body">
+              <div class="phone-camera-module">
+                <div class="camera-lens lens-1"></div>
+                <div class="camera-lens lens-2"></div>
+              </div>
+              <div class="phone-brand-tag">phonias</div>
+            </div>
+          </div>
+          <div class="product-earbuds">
+            <div class="earbuds-case">
+              <div class="earbud earbud-left"></div>
+              <div class="earbud earbud-right"></div>
+            </div>
+          </div>
+          <div class="product-cable">
+            <div class="cable-coil"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: category cards -->
+      <div class="hero-right">
+        <div class="hero-card" data-delay="0">
+          <div class="hero-card-badge">NEW</div>
+          <div class="hero-card-img phone-card-img">
+            <div class="mini-phone"></div>
+          </div>
+          <span>Phone Cases</span>
+        </div>
+        <div class="hero-card" data-delay="1">
+          <div class="hero-card-img earbud-card-img">
+            <div class="mini-earbuds"></div>
+          </div>
+          <span>Earbuds</span>
+        </div>
+        <div class="hero-card" data-delay="2">
+          <div class="hero-card-badge">NEW</div>
+          <div class="hero-card-img charger-card-img">
+            <div class="mini-charger"></div>
+          </div>
+          <span>Chargers</span>
+        </div>
+        <button class="more-btn">More accessories</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY SECTION -->
+  <section class="categories" id="categories">
+    <div class="categories-inner">
+      <div class="categories-header">
+        <div class="categories-header-left">
+          <h2 class="section-heading">Upgrade your tech.<br>Simplify your life.</h2>
+          <p class="section-sub">Explore the most popular mobile<br>accessories of the season</p>
+        </div>
+        <div class="categories-header-right">
+          <p class="categories-desc">We bring you high-quality accessories designed to match your style and make your everyday tech life easier, smarter and better.</p>
+        </div>
+      </div>
+
+      <div class="category-grid">
+        <div class="category-card" data-category="cases">
+          <div class="category-card-img cases-img">
+            <div class="cat-phone-visual"></div>
+          </div>
+          <div class="category-card-footer">
+            <span class="category-name">Phone Cases</span>
+            <button class="shop-btn">Shop <span class="arrow">→</span></button>
+          </div>
+        </div>
+
+        <div class="category-card" data-category="earbuds">
+          <div class="category-card-img earbuds-img">
+            <div class="cat-earbuds-visual"></div>
+          </div>
+          <div class="category-card-footer">
+            <span class="category-name">Earbuds</span>
+            <button class="shop-btn">Shop <span class="arrow">→</span></button>
+          </div>
+        </div>
+
+        <div class="category-card" data-category="chargers">
+          <div class="category-card-img chargers-img">
+            <div class="cat-charger-visual"></div>
+          </div>
+          <div class="category-card-footer">
+            <span class="category-name">Chargers</span>
+            <button class="shop-btn">Shop <span class="arrow">→</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTION SECTION -->
+  <section class="collection" id="collection">
+    <div class="collection-inner">
+      <div class="collection-left">
+        <div class="collection-phone-visual">
+          <div class="hand-silhouette">
+            <div class="held-phone">
+              <div class="held-phone-camera">
+                <div class="held-cam-lens l1"></div>
+                <div class="held-cam-lens l2"></div>
+                <div class="held-cam-lens l3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collection-right">
+        <div class="collection-text">
+          <span class="collection-eyebrow">Premium Collection</span>
+          <h2 class="collection-heading">Carry style.<br>Power every<br>moment.</h2>
+          <p class="collection-desc">A collection made for those who love minimal design, premium quality and everyday convenience.</p>
+          <a href="#" class="collection-cta">Explore all →</a>
+        </div>
+        <div class="collection-products">
+          <div class="col-product">
+            <div class="col-product-img magsafe-img">
+              <div class="col-mini-phone"></div>
+            </div>
+            <span>MagSafe Case</span>
+          </div>
+          <div class="col-product">
+            <div class="col-product-img wireless-img">
+              <div class="col-mini-buds"></div>
+            </div>
+            <span>Wireless Earbuds</span>
+          </div>
+          <div class="col-product">
+            <div class="col-product-img powerbank-img">
+              <div class="col-mini-bank"></div>
+            </div>
+            <span>Power Bank</span>
+          </div>
+          <div class="col-product">
+            <div class="col-product-img cable-img">
+              <div class="col-mini-cable"></div>
+            </div>
+            <span>Charging Cable</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">phonias</div>
+        <p>Premium mobile accessories<br>for modern life.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Products</h4>
+          <a href="#">Phone Cases</a>
+          <a href="#">Earbuds</a>
+          <a href="#">Chargers</a>
+          <a href="#">Cables</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#">FAQ</a>
+          <a href="#">Returns</a>
+          <a href="#">Warranty</a>
+          <a href="#">Track Order</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Phonias. All rights reserved.</span>
+      <span>Privacy · Terms</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
