@@ -49,30 +49,7 @@
         <a href="#categories" class="hero-cta">Explore collection</a>
       </div>
 
-      <!-- CENTER: product visual rendered via CSS/SVG -->
-      <div class="hero-center">
-        <div class="hero-platform">
-          <div class="hero-platform-disc"></div>
-          <div class="product-phone-case">
-            <div class="phone-body">
-              <div class="phone-camera-module">
-                <div class="camera-lens lens-1"></div>
-                <div class="camera-lens lens-2"></div>
-              </div>
-              <div class="phone-brand-tag">phonias</div>
-            </div>
-          </div>
-          <div class="product-earbuds">
-            <div class="earbuds-case">
-              <div class="earbud earbud-left"></div>
-              <div class="earbud earbud-right"></div>
-            </div>
-          </div>
-          <div class="product-cable">
-            <div class="cable-coil"></div>
-          </div>
-        </div>
-      </div>
+
 
       <!-- RIGHT: category cards -->
       <div class="hero-right">
@@ -114,37 +91,39 @@
         </div>
       </div>
 
-      <div class="category-grid">
-        <div class="category-card" data-category="cases">
-          <div class="category-card-img cases-img">
-            <div class="cat-phone-visual"></div>
-          </div>
-          <div class="category-card-footer">
-            <span class="category-name">Phone Cases</span>
-            <button class="shop-btn">Shop <span class="arrow">→</span></button>
-          </div>
-        </div>
+<div class="category-grid">
 
-        <div class="category-card" data-category="earbuds">
-          <div class="category-card-img earbuds-img">
-            <div class="cat-earbuds-visual"></div>
-          </div>
-          <div class="category-card-footer">
-            <span class="category-name">Earbuds</span>
-            <button class="shop-btn">Shop <span class="arrow">→</span></button>
-          </div>
-        </div>
+  <div class="category-card" data-category="cases">
+    <div class="category-card-img cases-img">
+      <img src="assets/images/back-cover.jpg" alt="Phone Case">
+    </div>
+    <div class="category-card-footer">
+      <span class="category-name">Phone Cases</span>
+      <button class="shop-btn">Shop <span class="arrow">→</span></button>
+    </div>
+  </div>
 
-        <div class="category-card" data-category="chargers">
-          <div class="category-card-img chargers-img">
-            <div class="cat-charger-visual"></div>
-          </div>
-          <div class="category-card-footer">
-            <span class="category-name">Chargers</span>
-            <button class="shop-btn">Shop <span class="arrow">→</span></button>
-          </div>
-        </div>
-      </div>
+  <div class="category-card" data-category="earbuds">
+    <div class="category-card-img earbuds-img">
+      <img src="assets/images/headphones.jpg" alt="Earbuds">
+    </div>
+    <div class="category-card-footer">
+      <span class="category-name">Earbuds</span>
+      <button class="shop-btn">Shop <span class="arrow">→</span></button>
+    </div>
+  </div>
+
+  <div class="category-card" data-category="chargers">
+    <div class="category-card-img chargers-img">
+      <img src="assets/images/charger.jpg" alt="Charger">
+    </div>
+    <div class="category-card-footer">
+      <span class="category-name">Chargers</span>
+      <button class="shop-btn">Shop <span class="arrow">→</span></button>
+    </div>
+  </div>
+
+</div>
     </div>
   </section>
 
@@ -152,17 +131,11 @@
   <section class="collection" id="collection">
     <div class="collection-inner">
       <div class="collection-left">
-        <div class="collection-phone-visual">
-          <div class="hand-silhouette">
-            <div class="held-phone">
-              <div class="held-phone-camera">
-                <div class="held-cam-lens l1"></div>
-                <div class="held-cam-lens l2"></div>
-                <div class="held-cam-lens l3"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+ <div class="collection-phone-visual">
+  <video autoplay muted loop playsinline>
+    <source src="assets/images/iphone-main.mp4" type="video/mp4">
+  </video>
+</div>
       </div>
       <div class="collection-right">
         <div class="collection-text">
@@ -171,32 +144,37 @@
           <p class="collection-desc">A collection made for those who love minimal design, premium quality and everyday convenience.</p>
           <a href="#" class="collection-cta">Explore all →</a>
         </div>
-        <div class="collection-products">
-          <div class="col-product">
-            <div class="col-product-img magsafe-img">
-              <div class="col-mini-phone"></div>
-            </div>
-            <span>MagSafe Case</span>
-          </div>
-          <div class="col-product">
-            <div class="col-product-img wireless-img">
-              <div class="col-mini-buds"></div>
-            </div>
-            <span>Wireless Earbuds</span>
-          </div>
-          <div class="col-product">
-            <div class="col-product-img powerbank-img">
-              <div class="col-mini-bank"></div>
-            </div>
-            <span>Power Bank</span>
-          </div>
-          <div class="col-product">
-            <div class="col-product-img cable-img">
-              <div class="col-mini-cable"></div>
-            </div>
-            <span>Charging Cable</span>
-          </div>
-        </div>
+<div class="collection-products">
+
+  <div class="col-product">
+    <div class="col-product-img magsafe-img">
+      <img src="assets/images/magsafe-case.jpg" alt="MagSafe Case">
+    </div>
+    <span>MagSafe Case</span>
+  </div>
+
+  <div class="col-product">
+    <div class="col-product-img wireless-img">
+      <img src="assets/images/wirelesss-earsbuds.jpg" alt="Wireless Earbuds">
+    </div>
+    <span>Wireless Earbuds</span>
+  </div>
+
+  <div class="col-product">
+    <div class="col-product-img powerbank-img">
+      <img src="assets/images/poerbank.jpg" alt="Power Bank">
+    </div>
+    <span>Power Bank</span>
+  </div>
+
+  <div class="col-product">
+    <div class="col-product-img cable-img">
+      <img src="assets/images/power-cable.jpg" alt="Charging Cable">
+    </div>
+    <span>Charging Cable</span>
+  </div>
+
+</div>
       </div>
     </div>
   </section>

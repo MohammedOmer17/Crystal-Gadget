@@ -142,6 +142,7 @@ body {
   min-height: 600px;
   display: flex;
   align-items: center;
+  
   overflow: hidden;
 }
 
@@ -180,7 +181,7 @@ body {
   margin: 0 auto;
   padding: 0 clamp(20px, 4vw, 60px);
   display: grid;
-  grid-template-columns: 1fr 1.2fr 0.85fr;
+  grid-template-columns: 1fr auto;
   align-items: center;
   gap: 40px;
   padding-top: 64px;
@@ -257,12 +258,7 @@ body {
 }
 
 /* HERO CENTER — product platform */
-.hero-center {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  animation: heroCenterReveal 1.2s 0.3s cubic-bezier(0.23,1,0.32,1) both;
-}
+
 
 @keyframes heroCenterReveal {
   from { opacity: 0; transform: translateY(40px) scale(0.95); }
@@ -423,6 +419,8 @@ body {
 .hero-right {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-self: end;
   gap: 12px;
   align-items: flex-end;
 }
@@ -434,6 +432,7 @@ body {
   padding: 14px 16px;
   display: flex;
   align-items: center;
+    justify-self: end;
   gap: 14px;
   position: relative;
   cursor: pointer;
@@ -485,67 +484,9 @@ body {
 .earbud-card-img { background: linear-gradient(135deg, #E8D4C4, #D0B8A0); }
 .charger-card-img { background: linear-gradient(135deg, #C4E8D4, #A0D0B8); }
 
-/* Mini illustrations in cards */
-.mini-phone {
-  width: 28px;
-  height: 44px;
-  background: linear-gradient(145deg, #7A2030, #4A0F1A);
-  border-radius: 6px;
-  position: relative;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-}
 
-.mini-phone::before {
-  content: '';
-  position: absolute;
-  top: 6px;
-  right: 5px;
-  width: 12px;
-  height: 12px;
-  background: rgba(20,5,10,0.8);
-  border-radius: 3px;
-}
 
-.mini-earbuds {
-  width: 40px;
-  height: 36px;
-  background: linear-gradient(135deg, #8B2535, #5A1520);
-  border-radius: 8px 8px 10px 10px;
-  position: relative;
-}
 
-.mini-earbuds::before,
-.mini-earbuds::after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 14px;
-  background: #e8e8e8;
-  border-radius: 50% 50% 40% 40%;
-  top: 8px;
-}
-.mini-earbuds::before { left: 6px; }
-.mini-earbuds::after  { right: 6px; }
-
-.mini-charger {
-  width: 30px;
-  height: 36px;
-  background: linear-gradient(145deg, #7A2030, #5A1520);
-  border-radius: 6px;
-  position: relative;
-}
-
-.mini-charger::before {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 8px;
-  height: 8px;
-  background: #3A0F18;
-  border-radius: 2px;
-}
 
 .hero-card span {
   font-size: 0.82rem;
@@ -596,7 +537,7 @@ body {
   margin-bottom: clamp(40px, 6vw, 80px);
 }
 
-.categories-header-left {}
+
 
 .section-heading {
   font-family: 'Fraunces', serif;
@@ -614,7 +555,7 @@ body {
   line-height: 1.7;
 }
 
-.categories-header-right {}
+
 
 .categories-desc {
   max-width: 340px;
@@ -797,6 +738,17 @@ body {
 }
 
 .shop-btn:hover .arrow { transform: translateX(4px); }
+
+.category-card-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.category-card:hover img {
+  transform: translateY(-6px) scale(1.05);
+}
 
 /* =====================
    COLLECTION
@@ -1040,8 +992,21 @@ body {
   border-radius: 50% 50% 40% 40%;
   top: 10px;
 }
-.col-mini-buds::before { left: 8px; }
-.col-mini-buds::after  { right: 8px; }
+
+.collection-phone-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection-phone-visual video {
+  margin-top: 10px;
+  width: 330px; /* adjust based on your layout */
+  height: auto;
+  border-radius: 20px;
+  object-fit: contain;
+  filter: drop-shadow(0 30px 60px rgba(0,0,0,0.6));
+}
 
 .col-mini-bank {
   width: 54px;
@@ -1065,6 +1030,18 @@ body {
   text-align: center;
   font-weight: 500;
   line-height: 1.3;
+}
+
+.col-product-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.4));
+}
+
+.col-product:hover img {
+  transform: translateY(-6px) scale(1.08);
 }
 
 /* =====================
