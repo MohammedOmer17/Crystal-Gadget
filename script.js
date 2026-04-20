@@ -173,3 +173,5 @@ document.addEventListener('DOMContentLoaded', () => {
     heroLeft.style.opacity = '1';
   }
 });
+
+
