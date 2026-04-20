@@ -1186,6 +1186,9 @@ body {
     align-items: center;
     justify-items: center;
   }
+  .hero-bg-image{
+    background-position:20% center;
+  }
 
   .hero-left { align-items: center; }
   .hero-center { display: none; }
