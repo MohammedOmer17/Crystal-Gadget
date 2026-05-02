@@ -174,4 +174,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// phone cases page
 
+const phoneCaseBtn = document.querySelector("#phone-cases-btn");
+
+phoneCaseBtn.addEventListener("click", ()=>{
+  window.location.href = "back-cover.html";
+})

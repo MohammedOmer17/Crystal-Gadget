@@ -755,7 +755,8 @@ body {
 
 .category-card-img img {
   width: 100%;
-  height: auto;
+  height: 110%;
+  
   object-fit: contain;
   transition: transform 0.4s ease;
 }
