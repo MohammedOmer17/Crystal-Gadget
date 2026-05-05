@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headphones — 2026 Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="headphone.css">
+</head>
+<body>
+
+  <!-- Back Button -->
+  <a href="#" class="back-btn" onclick="history.back(); return false;">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M12 5l-7 7 7 7"/>
+    </svg>
+    Back
+  </a>
+
+  <!-- Hero -->
+  <div class="hero">
+    <span class="hero-label">2026 Collection</span>
+    <h1>Head<em>phones</em></h1>
+    <p class="hero-sub">Premium over-ear and in-ear headphones engineered for audiophiles and everyday listeners alike.</p>
+    <div class="hero-line"></div>
+  </div>
+
+  <!-- Video Section -->
+  <div class="video-section">
+    <span class="video-label">Experience the sound</span>
+    <div class="video-wrap">
+      <video id="promo-video" autoplay muted loop playsinline >
+        <source src="assets/images/headphones/promo-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-placeholder" id="video-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/>
+          <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/>
+        </svg>
+      
+      </div>
+      <span class="video-badge">New Drop</span>
+    </div>
+  </div>
+
+  <!-- Filter Pills -->
+  <div class="filter-bar">
+    <button class="pill active" data-filter="All">All</button>
+    <button class="pill" data-filter="Over-Ear">Over-Ear</button>
+    <button class="pill" data-filter="In-Ear">In-Ear</button>
+    <button class="pill" data-filter="Wireless">Wireless</button>
+    <button class="pill" data-filter="Studio">Studio</button>
+  </div>
+
+
+
+  <!-- Card Grid -->
+  <section class="cases-section">
+    <div class="card-grid" id="cardGrid">
+
+      <div class="card" data-label="Obsidian Pro X" data-category="Over-Ear">
+        <div class="card-inner">
+          <img data-src="assets/images/headphones/headphone-13.jpg" alt="Obsidian Pro X headphones" loading="lazy">
+          <div class="card-overlay">
+          
+          </div>
+          <div class="view-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-label="Pearl Wireless" data-category="Wireless">
+        <div class="card-inner">
+          <img data-src="assets/images/headphones/headphone-12.jpg" alt="Pearl Wireless headphones" loading="lazy">
+          <div class="card-overlay">
+          
+          </div>
+          <div class="view-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-label="Bloom Studio" data-category="Studio">
+        <div class="card-inner">
+          <img data-src="assets/images/headphones/headphone-3.jpg" alt="Bloom Studio headphones" loading="lazy">
+          <div class="card-overlay">
+           
+          </div>
+          <div class="view-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-label="Sand In-Ear" data-category="In-Ear">
+        <div class="card-inner">
+          <img data-src="assets/images/headphones/headphone-4.jpg" alt="Sand In-Ear headphones" loading="lazy">
+          <div class="card-overlay">
+           
+          </div>
+          <div class="view-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card" data-label="Forest Green" data-category="Over-Ear">
+        <div class="card-inner">
+          <img data-src="assets/images/headphones/headphone-6.jpg" alt="Forest Green headphones" loading="lazy">
+          <div class="card-overlay">
+          
+          </div>
+          <div class="view-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-label="Glacier BT" data-category="Wireless">
+        <div class="card-inner">
+          <img data-src="assets/images/headphones/headphone-7.jpg" alt="Glacier BT headphones" loading="lazy">
+          <div class="card-overlay">
+          
+          </div>
+          <div class="view-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-label="Amber Studio" data-category="Studio">
+        <div class="card-inner">
+          <img data-src="assets/images/headphones/headphone-8.jpg" alt="Amber Studio headphones" loading="lazy">
+          <div class="card-overlay">
+         
+          </div>
+          <div class="view-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-label="Pebble Buds" data-category="In-Ear">
+        <div class="card-inner">
+          <img data-src="assets/images/headphones/headphone-9.jpg" alt="Pebble Buds headphones" loading="lazy">
+          <div class="card-overlay">
+           
+          </div>
+          <div class="view-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-label="Cocoa Leather" data-category="Over-Ear">
+        <div class="card-inner">
+          <img data-src="assets/images/headphones/headphone-10.jpg" alt="Cocoa Leather headphones" loading="lazy">
+          <div class="card-overlay">
+         
+          </div>
+          <div class="view-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-label="Stone Edge" data-category="Studio">
+        <div class="card-inner">
+          <img data-src="assets/images/headphones/headphone-1.jpg" alt="Stone Edge headphones" loading="lazy">
+          <div class="card-overlay">
+         
+          </div>
+          <div class="view-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-label="Velvet Dusk" data-category="Wireless">
+        <div class="card-inner">
+          <img data-src="assets/images/headphones/headphone-13.jpg" alt="Velvet Dusk headphones" loading="lazy">
+          <div class="card-overlay">
+          
+          </div>
+          <div class="view-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lb-backdrop" id="lbBackdrop"></div>
+    <div class="lb-content">
+      <button class="lb-nav" id="lbPrev" aria-label="Previous">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="lb-img-wrap">
+        <button class="lb-close" id="lbClose" aria-label="Close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <img id="lbImg" src="" alt="">
+        <div class="lb-info">
+          <span class="lb-name" id="lbName"></span>
+          <span class="lb-count" id="lbCount"></span>
+        </div>
+      </div>
+      <button class="lb-nav" id="lbNext" aria-label="Next">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="headphone.js"></script>
+</body>
+</html>

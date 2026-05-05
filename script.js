@@ -177,7 +177,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // phone cases page
 
 const phoneCaseBtn = document.querySelector("#phone-cases-btn");
+const headphoneBtn = document.querySelector("#headphones-btn")
 
 phoneCaseBtn.addEventListener("click", ()=>{
   window.location.href = "back-cover.html";
+})
+
+headphoneBtn.addEventListener("click" , () =>{
+  window.location.href = "headphone.html";
 })
