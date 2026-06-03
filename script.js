@@ -177,7 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // phone cases page
 
 const phoneCaseBtn = document.querySelector("#phone-cases-btn");
-const headphoneBtn = document.querySelector("#headphones-btn")
+const headphoneBtn = document.querySelector("#headphones-btn");
+const chargerBtn = document.querySelector("#charger-btn")
 
 phoneCaseBtn.addEventListener("click", ()=>{
   window.location.href = "back-cover.html";
@@ -185,4 +186,8 @@ phoneCaseBtn.addEventListener("click", ()=>{
 
 headphoneBtn.addEventListener("click" , () =>{
   window.location.href = "headphone.html";
+})
+
+chargerBtn.addEventListener("click" , () =>{
+  window.location.href = "charger.html";
 })
