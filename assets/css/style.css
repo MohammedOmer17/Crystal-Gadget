@@ -149,7 +149,7 @@ body {
 .hero-bg-image {
   position: absolute;
   inset: 0;
-  background-image: url('assets/images/hero-bg.png');
+  background-image: url('../images/hero-bg.png');
   background-size: cover;
   background-position: center;
   transform: scale(1.05);
